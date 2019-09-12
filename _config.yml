@@ -11,8 +11,9 @@ collections:
 url: https://y7kim.github.io
 baseurl: "/agency-jekyll-theme/"
 email: your-email@domain.com
-description: Learn how to leverage SMS with MeridianLink LoansPQ and XpressAccounts
-  to fund loans, increase membership, and improve the digital user experience.
+description: Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
 people:
 - name: Kay Garland
   pic: 1

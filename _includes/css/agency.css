@@ -302,8 +302,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        padding-top: 150px;
+        padding-bottom: 50px;
     }
 
     header .intro-text .intro-lead-in {
@@ -656,69 +656,73 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
+div#contact {
     background-color: #222;
     background-image: url('{{ site.baseurl }}/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+div#contact .section-heading {
     color: #fff;
 }
 
-section#contact .form-group {
+div#contact .form-group {
     margin-bottom: 25px;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
+div#contact .form-group input,
+div#contact .form-group textarea {
     padding: 20px;
 }
 
-section#contact .form-group input.form-control {
-    height: auto;
-}
-
-section#contact .form-group textarea.form-control {
+div#contact .form-group textarea.form-control {
     height: 236px;
 }
 
-section#contact .form-control:focus {
+div#contact .form-control:focus {
     border-color: #{{ site.data.template.color.primary }};
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
+div#contact::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-moz-placeholder {
+div#contact:-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact::-moz-placeholder {
+div#contact::-moz-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-ms-input-placeholder {
+div#contact:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact .text-danger {
+div#contact .text-danger {
     color: #e74c3c;
+}
+
+div#contact p.section-subheading {
+    color: #ccc;
+}
+
+div#contact .text-danger {
+    width: auto !important;
 }
 
 footer {

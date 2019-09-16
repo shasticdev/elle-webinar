@@ -300,6 +300,21 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+header .intro-text .intro-bold-lead-in {
+    font-size: 25px !important;
+    margin-bottom: 25px;
+    line-height: 25px !important;
+    font-weight: bold;
+    font-family: {{ site.data.template.font.primary }};
+}
+
+header .intro-text .intro-small-lead-in {
+    font-size: 25px !important;
+    margin-bottom: 25px;
+    line-height: 25px !important;
+    font-family: {{ site.data.template.font.primary }};
+}
+
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 150px;

@@ -31,7 +31,7 @@ $(function() {
             var organization = $("input#organization").val();
 
             $.ajax({
-                url: "https://elle.shastic.com/SMS-MeridianLink",
+                url: "https://elle.shastic.com/texting-webinar/submit/417178b300ff0d78b53f",
                 type: "POST",
                 data: {
                     first_name: first_name,

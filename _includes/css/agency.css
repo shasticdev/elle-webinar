@@ -11,6 +11,7 @@ body {
 }
 
 .text-muted {
+    font-size: 18px;
     color: #{{ site.data.template.color.muted }};
 }
 
@@ -283,11 +284,14 @@ header .intro-text {
     padding-bottom: 50px;
 }
 
+header .intro-text .intro-content { 
+        padding-top: 6em;
+}
+
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 22px;
-    font-style: italic;
     line-height: 22px;
 }
 
@@ -325,7 +329,6 @@ header .intro-text .intro-small-lead-in {
         margin-bottom: 25px;
         font-family: {{ site.data.template.font.secondary }};
         font-size: 40px;
-        font-style: italic;
         line-height: 40px;
     }
 
@@ -353,7 +356,7 @@ section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     font-weight: 400;
 }

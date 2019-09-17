@@ -31,7 +31,7 @@ $(function() {
             var organization = $("input#organization").val();
 
             $.ajax({
-                url: "https://hooks.zapier.com/hooks/catch/2966969/ze5jcx/",
+                url: "https://elle.shastic.com/SMS-MeridianLink",
                 type: "POST",
                 data: {
                     first_name: first_name,

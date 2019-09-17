@@ -1,3 +1,20 @@
+// first_name: Alvaro
+// last_name: Alday
+// email: dev@shastic.com
+// organization: shastic
+// source: landingi_LOS_webinar_July
+// event_name: SMS Integrations with MeridianLink
+// event_time: 11:00 am PT, 2:00 pm ET
+// event_date: July 18, 2019
+// event_link: https://zoom.us/wc/182568956/join
+// event_dialin: 1-669-900-6833
+// event_meeting_id: 182-568-956
+// event_host: Landry Yoder
+// event_link_2: https://zoom.us/j/182568956
+// _name_: 
+// _uid: sLqfL63Hh3a6h6qRN6b2uTsoMGcHcxEF
+// _redirect: 
+
 $(function() {
 
     $("input,textarea").jqBootstrapValidation({
@@ -8,23 +25,31 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var name = $("input#name").val();
+            var first_name = $("input#first_name").val();
+            var last_name = $("input#last_name").val();
             var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
+            var organization = $("input#organization").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://hooks.zapier.com/hooks/catch/2966969/ze5jcx/",
                 type: "POST",
                 data: {
-                    name: name,
-                    phone: phone,
+                    first_name: first_name,
+                    last_name: last_name,
                     email: email,
-                    message: message
+                    organization: organization,
+                    event_name: "SMS Integrations with MeridianLink",
+                    event_time: "11:00 am PT, 2:00 pm ET",
+                    event_date: "July 18, 2019",
+                    event_link: "https://zoom.us/wc/182568956/join",
+                    event_dialin: "1-669-900-6833",
+                    event_meeting_id: "182-568-956",
+                    event_host: "Landry Yoder",
+                    event_link_2: "https://zoom.us/j/182568956"
                 },
                 cache: false,
                 success: function() {

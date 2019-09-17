@@ -313,9 +313,10 @@ header .intro-text .intro-bold-lead-in {
 }
 
 header .intro-text .intro-small-lead-in {
-    font-size: 25px !important;
+    font-size: 27px !important;
     margin-bottom: 25px;
     line-height: 25px !important;
+    font-weight: bold;
     font-family: {{ site.data.template.font.primary }};
 }
 

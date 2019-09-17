@@ -270,7 +270,7 @@ header {
     text-align: center;
     color: #333;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/bg_01.png');
+    background-image: url('{{ site.baseurl }}/img/bg_01.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -305,9 +305,9 @@ header .intro-text .intro-heading {
 }
 
 header .intro-text .intro-bold-lead-in {
-    font-size: 25px !important;
+    
     margin-bottom: 25px;
-    line-height: 25px !important;
+    
     font-weight: bold;
     font-family: {{ site.data.template.font.primary }};
 }
@@ -348,7 +348,7 @@ section {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-size: 40px;
 }
 
@@ -357,7 +357,6 @@ section h3.section-subheading {
     text-transform: none;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 18px;
-    font-style: italic;
     font-weight: 400;
 }
 
